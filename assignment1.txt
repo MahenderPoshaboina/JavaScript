@@ -1,10 +1,37 @@
 //check whether given year is leap year or not 
 
-
-
 let year=2000
 if( year %4 === 0 && (year %100 !==0 || year %400 === 0) )
     console.log(`${year} is a leap year`)
 else
     console.log(`${year} is not a leap year`)
 
+
+
+//convert Celsius to Fahrenheit
+
+let Celsius = -5
+const Fahrenheit = ((9 * Celsius)/5)+32
+console.log(`${Celsius}°C is ${Fahrenheit}°F`)
+
+
+
+
+//convert Fahrenheit to Celsius
+
+let Fahrenheit =90;
+const Celsius= ((Fahrenheit -32)/9) *5;
+console.log(`${Fahrenheit}°F is ${Celsius}°C`)
+
+
+
+//factorial of a given number
+
+let number = 6
+const x=number;
+let ans = 1
+while( number>0){
+    ans = ans*number
+    number--
+}
+console.log(`The Factorial of ${x} is ${ans}`)
