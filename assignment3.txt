@@ -1,0 +1,70 @@
+//printing pattern 
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+let x=1;
+for( i=1; i<=4; i++){
+    let str ="";
+    for( j=1;j<=i;j++){
+        // console.log(x);
+        str += " " +x;
+        x++;
+    }
+    console.log( str);
+}
+
+
+ //armstrong number
+
+function armstrong(number){
+    let sum =0;
+    while( number !== 0){
+        let n = number % 10;
+        sum += n*n*n;
+        number = number -n;
+        number = number/10;
+    }
+    return sum;
+}
+let number = 407;
+const duplicate_number = number;
+let answer = armstrong(number);
+if(duplicate_number === answer )
+        console.log("It is armstrong number");
+else
+    console.log(" not an armstrong number");
+
+
+
+
+
+//special number
+function factorial(n){
+    let ans = 1;
+    while( n>0){
+        ans = ans*n;
+        n--;
+    }
+    return ans;
+}
+function special_number(number){
+    let sum =0;
+    while(number !== 0){
+        let n = number %10;
+        let fac = factorial(n);
+        sum += fac;
+        number = number -n;
+        number = number/10;
+    }
+    return sum;
+}
+let number =40585;
+const duplicate_number = number;
+let answer = special_number(number);
+if( answer === duplicate_number){
+    console.log("It is a special number");
+}
+else{
+    console.log("not a special number");
+}
